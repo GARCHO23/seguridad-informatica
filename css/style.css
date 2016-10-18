@@ -1,4 +1,4 @@
-/*font-family: 'Shadows Into Light', cursive;
+﻿/*font-family: 'Shadows Into Light', cursive;
  font-family: 'Indie Flower', cursive;
 */
             #apDiv1 {
@@ -104,6 +104,10 @@ div {
 }
         .class body nav .menu #apDiv3 form {
 	font-size: 12px;
+	height:100%;
+	right: 0px;
+bottom: 1000px;
+	
 }
         form {
 	font-size: 12px;
@@ -199,7 +203,9 @@ div {
 	top: 184px;
 }
         .class body section article p {
+	height:100%;
 	font-weight: bold;
+
 }
         #apDiv21 {
 	position: absolute;
@@ -209,7 +215,8 @@ div {
 	left: 272px;
 	top: 745px;
 }
-        #apDiv22 {	position: absolute;
+        #apDiv22 {	
+	position: absolute;
 	width: 200px;
 	height: 115px;
 	z-index: 10;
@@ -273,7 +280,7 @@ div {
 }
 /*ETIQUETAS*/
 body{
-
+height:100%;
 background-repeat: no-repeat;
 background-size: cover;
 background-color: #666;
@@ -346,7 +353,7 @@ aside{
 	border-radius: 0px 10px 0px 0px;
 }
 footer{
-	width: 1000px;
+	
 	height: 70px;
 	background: #003f5e;
 	float: left;
@@ -355,7 +362,11 @@ footer{
 	margin-bottom: 20px;
 	font-size: 12px;
 	text-align: left;
-}
+	width: 1000px;
+	text-align: auto;
+	position: static;
+
+ }
 p{
 
 	font-size: 15px;
