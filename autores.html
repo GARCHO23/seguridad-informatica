@@ -11,12 +11,14 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=arial' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/WModal.js"></script>
+        <link rel="stylesheet" href="css/w3.css">
      </head>
     <body>	
         <Div id="contenidos">
             <header>
                 <div id="apDiv1"><img src="img/banner.jpg" width="1000" height="168">
-                  <div id="apDiv24">OVA PARA EL CURSO 204039 - SEGURIDAD INFORMÁTICA</div>
+                  <div id="apDiv24">OVA Para curso xxxxxxxx - Tecnología en Desarrollo de Software</div>
               </div>
             </header>
         	<p>&nbsp;</p>
@@ -29,6 +31,9 @@
                 <li><a href="multimedia.html" class="menu">Multimedia</a></li>
                 <li><a href="actividades.html" class="menu">Actividades</a></li>
                 <li><a href="autores.html" class="menu">Autores</a></li>
+                <div id="apDiv20">
+                    <a href="https://informacion.unad.edu.co/correo" target="_blank"><img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" border="0" /></a>
+                </div>
                 <div id="apDiv19">
                 <center>
                 	<div id="cuentavisitas"></div>
@@ -62,38 +67,80 @@
              </nav>
             <div id="apDiv14"><a href="https://campus0a.unad.edu.co/campus0/login/index.php" target="_blank"><img src="img/campus.png" width="116" height="101"></a>									</div>
     <section>
+    <h2>Diseño de Sitios Web - SEGURIDAD INFORMÁTICA - UNAD ECBTI</h2>
 
-<!-- ESTA PAGINA ES DE AUTORES, LO DICE ABAJO  -->
-
-
-    <h2>AUTORES</h2>
-    <div id="apDiv20"><a href="https://informacion.unad.edu.co/correo" target="_blank"><img src="img/rss_aqu_32.png" class="menu" title="Correo Institucional" border="0" /></a></div>
                 <article>
-                    <figure>
-                        <img src="img/programador.jpg" alt="Diseno">
-                  	</figure>
-                    <p>
-                        Descripción General del Curso:<br>
-                        • En la actualidad los recursos informáticos y el uso de nuevas tecnologías para el procesamiento de
-información hacen parte de todas las organizaciones, y temas como seguridad en la información cobran más vigencia.
-El curso de Seguridad informática, pretende orientar a los estudiantes en los fundamentos de seguridad de la información, comprender las necesidades de proteger, salvaguardar la información de las empresas y mantener disponibles los servicios de redes y comunicaciones.<br>
-<br>
-En la unidad 1, Fundamentos de seguridad de la información; presenta los conceptos fundamentales necesarios para la comprensión de la seguridad, de los actores de la inseguridad, la necesidad de prevenir incidentes, los diferentes tipos de amenazas, la Criptografía, los conceptos básicos de seguridad en sistemas operativos.
-La segunda unidad Estándares y Normatividad, presenta las normas internacionales de mejores prácticas en aplicación de la seguridad informática, como ISO 27000, el análisis de riesgos y la gestión de riesgos
-y los conceptos básicos de auditoria de sistemas informáticos.
-La tercera unidad Seguridad en Redes, propone la temática referente a controles lógicos y perimetrales, técnicas de ataques a los sistemas de información, técnicas de verificación y chequeos en penetración como análisis de vulnerabilidades.<br>
+                  <div class="w3-container">
+                    <h2>Autores</h2>
+                    <!--p>In this example we combine JavaScript from Slideshows and Modals to create a Lightbox (Modal Image Gallery):</p-->
+                    <div class="w3-row-padding" style="margin: 0 -16px;display: inline-block;text-align: center;">
+                      <div class="w3-col s4" style="margin: 8px">
+                        <img src="img/ImgDonis.png" style="width:60%;cursor:pointer"
+                        onclick="openModal();currentDiv(1)" class="w3-hover-shadow cursor">
+                      </div>
+                      <div class="w3-col s4" style="margin: 8px">
+                        <img src="img/ImgMilton.png" style="width:60%;cursor:pointer"
+                        onclick="openModal();currentDiv(2)" class="w3-hover-shadow cursor">
+                      </div>
+                      <div class="w3-col s4" style="margin: 8px">
+                        <img src="img/ImgCarlos.png" style="width:60%;cursor:pointer"
+                        onclick="openModal();currentDiv(3)" class="w3-hover-shadow cursor">
+                      </div>
+                      <div class="w3-col s4" style="margin: 8px">
+                        <img src="img/ImgFRANKLIN.png" style="width:60%;cursor:pointer"
+                        onclick="openModal();currentDiv(4)" class="w3-hover-shadow cursor">
+                      </div>
+                      <div class="w3-col s4" style="margin: 8px">
+                        <img src="img/imgDANINSO.png" style="width:60%;cursor:pointer"
+                        onclick="openModal();currentDiv(5)" class="w3-hover-shadow cursor">
+                      </div>
+                    </div>
 
-<br>
-Propósitos:<br>
-• Afianzar y Fortalecer en el estudiante con los fundamentos teórico-prácticos sobre seguridad informática básica al estudiante, que le permita comprender los aspectos más relevantes en entornos reales.
+                    <div id="myModal" class="w3-modal w3-black" style="width: 80%;height: 100%;z-index:1002;overflow: auto; padding-top: 30px; margin: 0 10%;">
+                     <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright cursor" onclick="closeModal()">&times;</span>
+                     <div class="w3-modal-content">
 
-Competencias generales del curso:<br>
-• El estudiante adquiere conceptos sobre seguridad de la información, desarrolla las habilidades para la identificación de vulnerabilidades, amenazas y riesgos de seguridad informáticos y de la información.<br>
-• El estudiante conoce e identifica los estándares que debe usar para los procesos de análisis, evaluación y gestión de los riesgos y los estándares de buenas prácticas que ayudarán a identificar los controles que deben existir en las organizaciones de acuerdo a esas buenas prácticas.<br>
-• El estudiante adquiere los conceptos fundamentales para de identificar debilidades en los sistemas operativos y de red, los tipos de control existentes y su integración dentro de las políticas y procedimientos para la estructuración de Sistemas de gestión de seguridad de la información SGSI.<br>
-• El estudiante adquiere la capacidad de formular y elaborar informes y documentación sobre el proceso de análisis, evaluación y gestión de riesgos, propuestas generales e implementación de soluciones de acuerdo al estándar y metodología aplicados.<br>
-• El estudiante respeta los valores éticos y de seguridad en los escenarios donde se desempeña.<br>
-                    </p>
+                      <div class="w3-content" style="max-width:1200px; background-color: black;">
+                       <img class="mySlides" src="img/ImgDonis.png" style="width:30%; margin: 1% 35%;">
+                       <img class="mySlides" src="img/ImgMilton.png" style="width:30%; margin: 1% 35%;">
+                       <img class="mySlides" src="img/ImgCarlos.png" style="width:30%; margin: 1% 35%;">
+                       <img class="mySlides" src="img/ImgFRANKLIN.png" style="width:30%; margin: 1% 35%;">
+                       <img class="mySlides" src="img/imgDANINSO.png" style="width:30%; margin: 1% 35%;">
+                       <div class="w3-row w3-black w3-center">
+                        <div class="w3-container w3-display-container">
+                         <p id="caption"></p>
+                         <span class="w3-display-middle w3-hover-text-grey w3-large cursor" style="left:1%" onclick="plusDivs(-1)">&#10094;</span>
+                         <span class="w3-display-middle w3-hover-text-grey w3-large cursor" style="left:99%" onclick="plusDivs(1)">&#10095;</span>
+                        </div>
+                        <div class="w3-col s4" style="width: 18%">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgDonis.png" style="width:90%" onclick="currentDiv(1)" alt="Hola mi nombre es Donis Diru Ahumada Barragan, soy técnico en sistemas he trabajador en la parte hoteleras y fondo de empleados, siempre en el área de sistemas, en este momento vivo en la ciudad de Santa Marta me encuentro inscrito el CEAD José Acevedo y Gómez de Bogotá en Ingeniería de sistemas, espero poder colaborar en lo que sea necesario para terminar el curso con éxito. Mi correo es dirudab@gmail.com , Cel: 3008019662">
+
+                        </div>
+                        <div class="w3-col s4" style="width: 18%">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgMilton.png" style="width:90%" onclick="currentDiv(2)" alt="Hola, soy Milton Javier Garcia Nací en cali valle y estudio actualmente Ingenieria en Sistemas, vivo en Puerto Leguizamo - Putumayo, entusiasmado por salir adelante. Mi hobbie es tocar Guitarra. trabajo para la Armada y mi numero telefonico es 3145350418 correo electrónico mjavi86@gmail.com cualquier inquietud.">
+
+                        </div>
+                        <div class="w3-col s4" style="width: 18%">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgCarlos.png" style="width:90%" onclick="currentDiv(3)" alt="Soy estudiante de Tecnología de Sistemas e Ingeniería de Sistemas del CEAD de Cartagena. Soy funcionario de Alcaldía Municipal de Sincelejo y soy discapacitado auditivo y manejo la lectura labios faciales. (Sordo).
+                    WhatsApp: 3016806987
+                    ">
+                        </div>
+                        <div class="w3-col s4" style="width: 18%">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgFRANKLIN.png" style="width:90%" onclick="currentDiv(4)" alt="Me desempeño como: Buzo Industrial, en el ámbito profesional. Actualmente trabajo para una multinacional, laborando doce horas al día. La idea es capacitarme profesionalmente para desarrollar programas y tecnologías que ya existen a nivel internacional pero que no son aplicables a nuestro medio a no ser que se adapten al entorno del buceo comercial en Colombia, estas tecnologías serian amigables con las agrestes condiciones del medio, facilitando y mejorando la eficacia y seguridad en esta actividad de alto riesgo. Tengo muchos proyectos encaminados a mi profesión y con estos nuevos conocimientos podré aportar o mejorar herramientas para esta labor. Actualmente estoy cursando Octavo semestre de Ingeniería de Sistemas.
+                     Mi número celular es 3015019610. 
+                    Mi Skype : buzoindustrial1
+                    ">
+                        </div>
+                        <div class="w3-col s4" style="width: 18%">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/imgDANINSO.png" style="width:90%" onclick="currentDiv(5)" alt="Hola a todos, me llamo Daninso Gamez, vivo en Santa Marta nacido en Valledupar, voy a dar todo de mi para realizar cada etapa de estos estudios y con la mano de Dios a terminarlos">
+                        </div>
+                       </div> <!-- End row -->
+                      </div> <!-- End w3-content -->
+                      
+                     </div> <!-- End modal content -->
+                    </div> <!-- End modal -->
+
+                    </div>                
       			</article>
     </section>
     <aside> 
@@ -110,13 +157,13 @@ Competencias generales del curso:<br>
       			<div id="apDiv8"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15908.191419159031!2d-74.0975768!3d4.5854329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1c38a35fe03bf87!2sUNAD+UNIVERSIDAD+NACIONAL+ABIERTA+Sede+Jos%C3%A9+Celestino+Mutis!5e0!3m2!1ses!2sco!4v1475599261440" width="260" height="180" frameborder="0" style="border:0" allowfullscreen></iframe></div>
               <div id="apDiv15"></div>
               <div id="apDiv16">Nuestra ECBTI</div>
-      <div id="apDiv18"><iframe width="260" height="180" src="https://www.youtube.com/embed/Z-rfSPH3ZQA" frameborder="0" allowfullscreen></iframe></div>
+      <div id="apDiv18"><iframe width="260" height="180" src="https://www.youtube.com/embed/Z-rfSPH3ZQA" frameborder="0" style="border:0" allowfullscreen></iframe></div>
     	</aside>
 		<Footer>
           <div id="apDiv25">Para uso de la Universidad Nacional Abierta y a Distancia UNAD</div>
-          <div id="apDiv26">Elaborado por: Luis Fernando Jaramillo Hernández, estudiante del programa Ing. de Sistemas </div>
+          <div id="apDiv26">Elaborado por: grupo #301122_75, estudiantes del programa DISEÑOS DE SITIOS WEB</div>
 		  <div id="apDiv13"><img src="img/logoUNADgrisInferior.png" width="225" height="41"></div>
-		  <div id="apDiv27">CEAD Dosquebradas - 2016</div>
+		  <div id="apDiv27">UNAD (CEAD) Santa Marta - 2016</div>
     	</Footer>
    </body>
     <script src="js/modernizr.js"></script>   
