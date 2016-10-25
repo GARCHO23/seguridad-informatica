@@ -73,7 +73,7 @@
                   <div class="w3-container">
                     
                     <!--p>In this example we combine JavaScript from Slideshows and Modals to create a Lightbox (Modal Image Gallery):</p-->
-                    <div class="w3-row-padding" style="margin: 0 -16px;display: inline-block;text-align: center;">
+                    <div class="w3-row-padding" style="margin: 0 -16px;display: flex;text-align: center;">
                       <div class="w3-col s4" style="margin: 8px">
                         <img src="img/ImgDonis.png" style="width:60%;cursor:pointer"
                         onclick="openModal();currentDiv(1)" class="w3-hover-shadow cursor">
@@ -86,54 +86,101 @@
                         <img src="img/ImgCarlos.png" style="width:60%;cursor:pointer"
                         onclick="openModal();currentDiv(3)" class="w3-hover-shadow cursor">
                       </div>
-                      <div class="w3-col s4" style="margin: 8px">
+                      <!--div class="w3-col s4" style="margin: 8px">
                         <img src="img/ImgFRANKLIN.png" style="width:60%;cursor:pointer"
                         onclick="openModal();currentDiv(4)" class="w3-hover-shadow cursor">
-                      </div>
+                      </div-->
                       <div class="w3-col s4" style="margin: 8px">
                         <img src="img/imgDANINSO.png" style="width:60%;cursor:pointer"
-                        onclick="openModal();currentDiv(5)" class="w3-hover-shadow cursor">
+                        onclick="openModal();currentDiv(4)" class="w3-hover-shadow cursor">
                       </div>
                     </div>
 
-                    <div id="myModal" class="w3-modal w3-black" style="width: 80%;height: 100%;z-index:1002;overflow: auto; padding-top: 30px; margin: 0 10%;">
+                    <div id="myModal" class="w3-modal w3-black" style="width: 60%;height: 80%;z-index:1002;/*overflow: auto;*/ padding-top: 30px; margin: 5% 15%;">
                      <span class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright cursor" onclick="closeModal()">&times;</span>
                      <div class="w3-modal-content">
 
-                      <div class="w3-content" style="max-width:1200px; background-color: black;">
-                       <img class="mySlides" src="img/ImgDonis.png" style="width:30%; margin: 1% 35%;">
-                       <img class="mySlides" src="img/ImgMilton.png" style="width:30%; margin: 1% 35%;">
-                       <img class="mySlides" src="img/ImgCarlos.png" style="width:30%; margin: 1% 35%;">
-                       <img class="mySlides" src="img/ImgFRANKLIN.png" style="width:30%; margin: 1% 35%;">
-                       <img class="mySlides" src="img/imgDANINSO.png" style="width:30%; margin: 1% 35%;">
-                       <div class="w3-row w3-black w3-center">
+                      <div class="w3-content" style="max-width:800px; background-color: white;" >
+                       <div calss="autores" style="color: black; display: flex;">
+                        <img class="mySlides" src="img/ImgDonis.png" style="width:30%; margin: 1% 5%;"> 
+                        <div calss="info">                
+                           <!--p calss="dato" style="padding: 10px; margin: auto; text-align: left;font-size: 15px">DONIS DIRU AHUMADA BARRAGAN</p-->
+                           <p class="dato" style="color: black">
+                           	 DONIS DIRU AHUMADA BARRAGAN <br/>
+                             Estudiante de Ingeneria de Sistemas <br/>
+                             Codigo : 85472144 <br/>
+                             E-mail : dirudab@gmail.com <br/>
+                             Skype  : dirudab <br/>
+                             Celular: 3008019662
+                           </p>
+                        </div>
+                        </div>
+                       <div calss="autores" style="color: black; display: flex;">
+                       <img class="mySlides" src="img/ImgMilton.png" style="width:30%; margin: 1% 5%;">
+                       <div calss="info" style="color: black">
+                           <!--p calss="dato" style="padding: 10px; margin: auto;text-align: left;font-size: 15px">MILTON JAVIER GARCIA</p-->
+                           <p class="dato" style="color: black">
+                           	 MILTON JAVIER GARCIA<br/>                          
+                             Estudiante de Ingeneria de Sistemas <br/>
+                             Codigo : 94543480 <br/>
+                             E-mail : mjavi86@gmail.com <br/>
+                             Skype  : garcho23 <br/>
+                             Celular: 3145350418
+                           </p>
+                         </div>
+                        </div> 
+                        <div calss="autores" style="color: black; display: flex;">
+                       <img class="mySlides" src="img/ImgCarlos.png" style="width:30%; margin: 1% 5%;">
+                       <div calss="info" style="color: black">
+                           <!--p calss="dato" style="padding: 10px; margin: auto;text-align: left; font-size: 15px">CARLOS ALBERTO PAINCHAULT</p-->
+                           <p class="dato" style="color: black">
+                             CARLOS ALBERTO PAINCHAULT<br/>
+                             Estudiante de Ingeneria de Sistemas <br/>
+                             Codigo :  92532268 <br/>
+                             E-mail :  <br/>
+                             Skype  :  <br/>
+                             Celular: 3016806987
+                           </p>
+                         </div>
+                        </div>
+
+                      <div calss="autores" style="color: black; display: flex;">
+                       <img class="mySlides" src="img/imgDANINSO.png" style="width:30%; margin: 1% 5%;">
+                       <div calss="info" style="color: black">
+                           <!--p calss="dato" style=" font-size: 15px; padding: 10px; margin: auto;text-align: left;color: black">DANINSO JOSE GAMEZ</p-->
+                           <p class="dato" style="color: black">
+                             DANINSO JOSE GAMEZ<br/>
+                             Estudiante de Ingeneria de Sistemas <br/>
+                             Codigo : 1003198376 <br/>
+                             E-mail : djgamez1228@gmail.com <br/>
+                             Skype  : djgamez91 <br/>
+                             Celular: 3105401755
+                           </p>
+                         </div>
+                        </div>
+                       <div class="w3-row w3-black w3-center" style="margin: 5%">
                         <div class="w3-container w3-display-container">
-                         <p id="caption"></p>
+                         <p id="caption" style="text-align: center;"></p>
                          <span class="w3-display-middle w3-hover-text-grey w3-large cursor" style="left:1%" onclick="plusDivs(-1)">&#10094;</span>
                          <span class="w3-display-middle w3-hover-text-grey w3-large cursor" style="left:99%" onclick="plusDivs(1)">&#10095;</span>
                         </div>
+                        
                         <div class="w3-col s4" style="width: 18%">
-                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgDonis.png" style="width:90%" onclick="currentDiv(1)" alt="Hola mi nombre es Donis Diru Ahumada Barragan, soy técnico en sistemas he trabajador en la parte hoteleras y fondo de empleados, siempre en el área de sistemas, en este momento vivo en la ciudad de Santa Marta me encuentro inscrito el CEAD José Acevedo y Gómez de Bogotá en Ingeniería de sistemas, espero poder colaborar en lo que sea necesario para terminar el curso con éxito. Mi correo es dirudab@gmail.com , Cel: 3008019662">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgDonis.png" style="width:90%" onclick="currentDiv(1)" alt="Donis Diru Ahumada Barragan">
 
                         </div>
                         <div class="w3-col s4" style="width: 18%">
-                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgMilton.png" style="width:90%" onclick="currentDiv(2)" alt="Hola, soy Milton Javier Garcia Nací en cali valle y estudio actualmente Ingenieria en Sistemas, vivo en Puerto Leguizamo - Putumayo, entusiasmado por salir adelante. Mi hobbie es tocar Guitarra. trabajo para la Armada y mi numero telefonico es 3145350418 correo electrónico mjavi86@gmail.com cualquier inquietud.">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgMilton.png" style="width:90%" onclick="currentDiv(2)" alt="Milton Javier Garcia">
 
                         </div>
                         <div class="w3-col s4" style="width: 18%">
-                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgCarlos.png" style="width:90%" onclick="currentDiv(3)" alt="Soy estudiante de Tecnología de Sistemas e Ingeniería de Sistemas del CEAD de Cartagena. Soy funcionario de Alcaldía Municipal de Sincelejo y soy discapacitado auditivo y manejo la lectura labios faciales. (Sordo).
-                    WhatsApp: 3016806987
-                    ">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgCarlos.png" style="width:90%" onclick="currentDiv(3)" alt=" Carlos Alberto Painchault">
                         </div>
+                         
                         <div class="w3-col s4" style="width: 18%">
-                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/ImgFRANKLIN.png" style="width:90%" onclick="currentDiv(4)" alt="Me desempeño como: Buzo Industrial, en el ámbito profesional. Actualmente trabajo para una multinacional, laborando doce horas al día. La idea es capacitarme profesionalmente para desarrollar programas y tecnologías que ya existen a nivel internacional pero que no son aplicables a nuestro medio a no ser que se adapten al entorno del buceo comercial en Colombia, estas tecnologías serian amigables con las agrestes condiciones del medio, facilitando y mejorando la eficacia y seguridad en esta actividad de alto riesgo. Tengo muchos proyectos encaminados a mi profesión y con estos nuevos conocimientos podré aportar o mejorar herramientas para esta labor. Actualmente estoy cursando Octavo semestre de Ingeniería de Sistemas.
-                     Mi número celular es 3015019610. 
-                    Mi Skype : buzoindustrial1
-                    ">
+                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/imgDANINSO.png" style="width:90%" onclick="currentDiv(4)" alt="Daninso Gamez">
                         </div>
-                        <div class="w3-col s4" style="width: 18%">
-                         <img class="demo w3-opacity w3-hover-opacity-off cursor" src="img/imgDANINSO.png" style="width:90%" onclick="currentDiv(5)" alt="Hola a todos, me llamo Daninso Gamez, vivo en Santa Marta nacido en Valledupar, voy a dar todo de mi para realizar cada etapa de estos estudios y con la mano de Dios a terminarlos">
-                        </div>
+                        
                        </div> <!-- End row -->
                       </div> <!-- End w3-content -->
                       
